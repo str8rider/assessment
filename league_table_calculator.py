@@ -38,7 +38,6 @@ def league_table_results(input_file):
             team_index = team_column.index(processed_away_team_name)
             teams[team_index][1] += away_team_points
     teams.sort(key = lambda x:(-x[1],x[0]))
-    print(teams)
 
     rank =1
     for row in teams:
@@ -50,7 +49,5 @@ def league_table_results(input_file):
     return teams
 
 if __name__ == '__main__':
-    print ('sys.argv',sys.argv)
-    print('here we are')
     input_file = sys.argv[1]
     league_table_results(input_file)
