@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-import sys
-
-
 def league_table_results(input_file):
     league_result_stream  = open(input_file)
     league_result = league_result_stream.readlines()
@@ -49,5 +46,6 @@ def league_table_results(input_file):
     return teams
 
 if __name__ == '__main__':
+    import sys
     input_file = sys.argv[1]
     league_table_results(input_file)
