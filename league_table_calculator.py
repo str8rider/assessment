@@ -49,7 +49,7 @@ def league_table_results(input_file):
              # descending points and then by alphabetical order
     rank =1  # display the results, starting with the team ranked #1, 
              # the first entry element which has the most points.
-    for row in teams:
+    for row in teams: #print each team's rank, name and points to terminal.
         points_string = 'pts'
         if int(row[1])==1:
             points_string = 'pt'
