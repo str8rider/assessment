@@ -35,4 +35,7 @@ which is the output the program is required to have.
 The unit test requires the installation of pytest, specifically pytest-7.1.2 in this case, and uses the test program called 'test_league_table_calculator.py'.
 This file tests whether the specific input provided above in "league_result.txt" results in the output required in reference (1) presented above.
 
-The files 'league_table_calculator.py','league_result.txt' and 'test_league_table_calculator.py' are required to be in the same folder; the unit test is carried out by running the command 'python3 -m pytest' or 'pytest' in this folder.
+The files 'league_table_calculator.py', 'test_league_table_calculator.py','league_result.txt' and another optional input test file 'league_result2.txt' are required to be in the same folder; the unit test is carried out by running the command 'python3 -m pytest' or 'pytest' in this folder.
+'league_result2.txt' is empty and the test checks whether the program handles empty input files correctly.
+
+The file 'league_table_calculator.py' can be imported and its sole function 'league_table_results' can be used for tests,  taking a string path to an input file as an argument.   
